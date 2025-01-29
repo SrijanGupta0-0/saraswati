@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset and Global Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+.logo img {
+    width: 200px;
+}
+
+body {
+    /* overflow: hidden; */
+    background-color: #ffdb58;
+}
+
+#overlay {
+    display: none;
+}
+
+nav {
+    height: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 2px 2px 20px gray;
+    background-color: #f9d342;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    box-sizing: border-box;
+    list-style: none;
+    font-weight: bold;
+    align-items: center;
+    border: 2px solid white;
+    padding: 20px 30px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px gray;
+}
+
+.navbar a,
+li {
+    text-decoration: none;
+    color: black;
+    transition: all .1s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #d14747;
+    /* font-size: 18px; */
+    text-decoration-line: underline;
+    text-underline-offset: 20px;
+}
+
+#prayButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f4b41a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease-in-out;
+
+}
+
+#prayButton:hover {
+    box-shadow: 0px 0px 15px black;
+    background-color: #d14747;
+
+}
+
+
+/* Section Styles */
+section {
+    height: 600px;
+    width: 100%;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: contain;
+    /* background-position-y:100px ; */
+    /* background-repeat: ; */
+    background-attachment: fixed;
+}
+
+.section1 {
+    background-image: linear-gradient(rgba(12, 3, 51, 0.5), rgba(12, 13, 51, 0.5));
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.section1 h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.section1 h2 {
+    font-size: 40px;
+}
+
+/* Flower Styles */
+.flower {
+    position: fixed;
+    z-index: 1000;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    animation: fall 10s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.section2 {
+    margin-top: -100px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+}
+
+.section2 .part1,
+.part2 {
+    width: 50%;
+    height: 60%;
+    border: 0px solid;
+    margin: 10px;
+    box-shadow: 18px 18px 10px gray;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.part1 {
+    animation: slider 15s ease-in-out infinite;
+}
+
+.part2 {
+    animation: slider2 15s ease-in-out infinite;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(im2.jpg);
+    }
+
+    30% {
+        background-image: url(im3.jpg);
+    }
+
+    60% {
+        background-image: url(prize3.jpg);
+    }
+
+    75% {
+        background-image: url(img10.jpg);
+    }
+
+    100% {
+        background-image: url(img15.jpg);
+    }
+
+    /* 100%{background-image: url(demo/6.jpg);} */
+}
+
+@keyframes slider2 {
+    0% {
+        background-image: url(murti.jpg);
+    }
+
+    30% {
+        background-image: url(dance2.jpg);
+    }
+
+    60% {
+        background-image: url(img33.jpg);
+    }
+
+    75% {
+        background-image: url(img16.jpg);
+    }
+
+    100% {
+        background-image: url(im2.jpg);
+    }
+}
+
+
+
+
+.countdown {
+    display: flex;
+    gap: 10px;
+    /* width: 90%; */
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffcc00;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.countdown div span {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.section3 {
+    color: white;
+    text-align: center;
+}
+
+.section3 h1 {
+    font-size: 50px;
+}
+
+.detail {
+    width: 50%;
+}
+
+.about h1 {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+.content {
+    display: flex;
+    /* width: 100%; */
+}
+
+.detail p {
+    text-align: justify;
+    margin-top: 20px;
+    /* line-height:1.5; */
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.img img {
+    /* margin-top: 20px; */
+    width: 100%;
+    /* height: 20rem; */
+
+}
+
+.img {
+    width: 50%;
+    margin: 30px;
+
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 900px) {
+    .countdown {
+        flex-direction: flex;
+        width: 100vw;
+        gap: 20px;
+    }
+
+    .countdown div {
+        width: 30%;
+        padding: 25px 30px;
+    }
+}
+
+.footer {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+.socialMedia a {
+    color: white;
+}
+
+.rights {
+    font-size: px;
+    color: white;
+}
+
+#active,
+.open-sb {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .logo img {
+        width: 180px;
+    }
+
+    nav {
+        position: relative;
+        justify-content: space-between;
+    }
+
+    #prayButton {
+        padding: 8px 15px;
+        font-size: 16px;
+    }
+
+    .open-sb {
+        display: block;
+        cursor: pointer;
+
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background: #FFD43B;
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        z-index: 10;
+        transition: 0.75s ease-out;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 25px;
+        padding: 0;
+        box-shadow: none;
+        border: none;
+    }
+
+    .navbar a {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    section {
+        height: 25%;
+        background-image: url(background-mobo.png);
+        background-position-y: 0px;
+        /* background-repeat: no-repeat; */
+    }
+
+    .section1 h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .section1 h2 {
+        font-size: 20px;
+    }
+
+    .section1 {
+        height: 350px;
+
+    }
+
+    .section2 {
+        margin-top: 70px;
+        height: 100vh;
+        display: block;
+
+    }
+
+    .section2 .part1,
+    .part2 {
+        width: 95%;
+        height: 30%;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px black;
+
+
+    }
+
+    .section3 {
+        margin-top: -150px;
+    }
+
+    .section3 h1 {
+        font-size: 30px;
+    }
+
+    .content {
+        /* width: fit-content; */
+        display: block;
+    }
+
+    .about h1 {
+        font-size: 35px;
+        padding-top: 25px;
+    }
+
+    .detail p {
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+        height: 70vh;
+    }
+
+    .detail {
+        width: 100%;
+        line-height: normal;
+    }
+
+    .img img {
+        box-sizing: border-box;
+        padding-right: 20px;
+        /* width: 10%; */
+    }
+
+    .img {
+        width: 90%;
+        /* margin: 0px; */
+        /* padding-right: 10px; */
+    }
+
+    .open-sb {
+        font-size: 2rem;
+        /* Increases the size of the icon */
+        padding: 10px;
+        /* Adds some clickable padding around the icon */
+    }
+
+    .open-sb i {
+        font-size: 1.8rem;
+        /* Adjust the icon size specifically */
+        /* padding-bottom: 30px; */
+
+    }
+
+    #active:checked~.navbar {
+        right: 0;
+    }
+
+    #active:checked~#overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+
+    }
+
+    .footer {
+
+        height: 110px;
+        display: block;
+
+    }
+
+    .socialMedia {
+        padding-top: 20px;
+
+    }
+
+    .rights {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
