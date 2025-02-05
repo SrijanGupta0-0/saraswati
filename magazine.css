@@ -102,9 +102,8 @@ li {
 }
 
 .main {
-    /* border: 2px solid; */
-    /* background-color: wheat; */
-    padding: 20px;
+
+    padding: 30px;
 
 }
 
@@ -137,14 +136,11 @@ section {
 .second,
 .third,
 .fourth {
-    border-radius: 20px;
+    border-radius: 0px 30px;
     box-shadow: 0px 0px 10px black;
-    /* box-shadow: -15px -15px 10px black; */
-
     background-color: #FFD43B;
     width: 100%;
     padding: 20px;
-    /* height: 450px; */
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
@@ -458,7 +454,10 @@ section {
         background-size: contain;
         /* background-position-y: 5px; */
     }
-
+        .main{
+        padding: 20px;
+    }
+    
     .first,
     .second,
     .third,
@@ -487,7 +486,7 @@ section {
 .third .part1,
 .fourth .part2{
     padding: 0px;
-    height: 150px;
+    height: 165px;
     margin-bottom: 15px;
 }
 
