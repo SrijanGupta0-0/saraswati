@@ -104,7 +104,10 @@ li {
 .main {
 
     padding: 30px;
-
+    
+.magazine h2{
+    color: #FFD43B;
+    
 }
 
 section {
@@ -466,13 +469,14 @@ section {
         display: block;
         padding: 10px;
     }
+    
     .first .part2,
-.second .part1,
-.third .part2,
-.fourth .part1 {
-    font-size: 9px;
-    margin-bottom: 15px;
-}
+    .second .part1,
+    .third .part2,
+    .fourth .part1 {
+        font-size: 9px;
+        margin-bottom: 15px;
+    }
 
     .part1,
     .part2 {
@@ -482,13 +486,13 @@ section {
     }
 
     .first .part1,
-.second .part2,
-.third .part1,
-.fourth .part2{
-    padding: 0px;
-    height: 165px;
-    margin-bottom: 15px;
-}
+    .second .part2,
+    .third .part1,
+    .fourth .part2{
+        padding: 0px;
+        height: 190px;
+        margin-bottom: 15px;
+    }
 
     .footer {
 
